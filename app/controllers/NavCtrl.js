@@ -1,8 +1,12 @@
 "use strict";
 
-angular.module("TodoApp").controller("NavCtrl",function($scope, FilterFactory, ItemFactory){
+angular.module("TodoApp").controller("NavCtrl",function($scope, FilterFactory, ItemFactory,$location){
 
     $scope.searchTerm = FilterFactory;
+
+    $scope.isActive = function(viewLocation){
+        return viewLocation === $location.path();
+    };
 
     $scope.navItems = [
         {
