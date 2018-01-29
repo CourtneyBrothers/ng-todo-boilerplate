@@ -44,7 +44,7 @@
             JSON.stringify(todoItem)
         )
         .then((data) => {
-            console.log("new item posted", data.name);
+            console.log("new item posted", data.data.name);
         })
         .catch((error)=>{
             console.log(error);
