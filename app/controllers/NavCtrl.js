@@ -4,9 +4,8 @@ angular.module("TodoApp").controller("NavCtrl",function($scope, FilterFactory, I
 
     $scope.searchTerm = FilterFactory;
 
-    $scope.isActive = function(viewLocation){
-        return viewLocation === $location.path();
-    };
+    $scope.isActive = (viewLocation) => viewLocation === $location.path();
+    
 
     $scope.navItems = [
         {

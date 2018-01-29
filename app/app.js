@@ -1,6 +1,7 @@
 "use strict";
 
 angular.module("TodoApp",["ngRoute"])
+.constant("FBUrl","https://todo-app-920df.firebaseio.com/")
 .config(($routeProvider) => { 
     //TODO: 
     $routeProvider
