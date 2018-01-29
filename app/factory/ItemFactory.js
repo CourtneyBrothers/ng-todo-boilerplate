@@ -1,6 +1,6 @@
 'use strict';
  
- angular.module("TodoApp").factory("ItemFactory".()=>{
+ angular.module("TodoApp").factory("ItemFactory",()=>{
     let items = [
         {
           id: 0,
@@ -34,7 +34,7 @@
         }
       ];
 
-      function getToDoItems(){
+      function getTodoItems(){
           return items;
       }
       return { getTodoItems}
