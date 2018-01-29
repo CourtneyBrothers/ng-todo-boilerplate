@@ -37,5 +37,6 @@
       function getToDoItems(){
           return items;
       }
+      return { getTodoItems}
  });
  
