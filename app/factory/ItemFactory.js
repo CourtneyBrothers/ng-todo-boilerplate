@@ -40,8 +40,8 @@
 
       function addNewItem(todoItem){
           todoItem.id = items.length;
-          items.push(todoItem)
+          items.push(todoItem);
       }
-      return { getTodoItems, addNewItem }
+      return { getTodoItems, addNewItem };
  });
  

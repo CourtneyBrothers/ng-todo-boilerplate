@@ -1,8 +1,9 @@
 "use strict";
 
-angular.module("TodoApp").controller("NavCtrl",function($scope, $rootScope){
-    $rootScope.searchTerm = "";
-    
+angular.module("TodoApp").controller("NavCtrl",function($scope, FilterFactory, ItemFactory){
+
+    $scope.searchTerm = FilterFactory;
+
     $scope.navItems = [
         {
             name:"Logout",

@@ -4,6 +4,6 @@ angular.module("TodoApp").controller("ItemDetailCtrl",function($scope,$routePara
   
     let todoItems = ItemFactory.getTodoItems();  
       $scope.selectedItem = todoItems.find((item)=>{
-        return item.id === +$routeParams.id
+        return item.id === +$routeParams.id;
     });
 });
