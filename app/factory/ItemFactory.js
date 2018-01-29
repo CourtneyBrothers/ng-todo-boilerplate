@@ -37,6 +37,11 @@
       function getTodoItems(){
           return items;
       }
-      return { getTodoItems}
+
+      function addNewItem(todoItem){
+          todoItem.id = items.length;
+          items.push(todoItem)
+      }
+      return { getTodoItems, addNewItem }
  });
  
